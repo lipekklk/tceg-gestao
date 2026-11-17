@@ -300,7 +300,9 @@ body.menu-open { overflow: hidden; }
 .acc__a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.55s var(--ease-out); }
 .acc__a > div { overflow: hidden; }
 .acc__a p { padding: 0 4rem 1.7rem 0; max-width: 68ch; color: var(--steel); margin: 0; }
-.acc__q[aria-expanded="true"] + .acc__a { grid-template-rows: 1fr; }
+.acc__item.is-open > .acc__a { grid-template-rows: 1fr; }
+/* Sem JS, as respostas ficam sempre visíveis */
+html:not(.js) .acc__a { grid-template-rows: 1fr; }
 
 /* ---------- Formulários ---------- */
 .form-grid { display: grid; gap: 1.1rem; }

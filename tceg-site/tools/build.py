@@ -572,8 +572,8 @@ def build_cases():
 def build_faq():
     items = ""
     for i, (q, a) in enumerate(FAQ_ITEMS, 1):
-        items += f"""<div class="acc__item">
-        <h2 class="visually-hidden-h"><button class="acc__q" id="fq{i}" aria-expanded="false" aria-controls="fa{i}" type="button"><span>{q}</span><span class="acc__plus" aria-hidden="true"></span></button></h2>
+        items += f"""<div class="acc__item{' is-open' if i == 1 else ''}">
+        <h2 class="visually-hidden-h"><button class="acc__q" id="fq{i}" aria-expanded="{'true' if i == 1 else 'false'}" aria-controls="fa{i}" type="button"><span>{q}</span><span class="acc__plus" aria-hidden="true"></span></button></h2>
         <div class="acc__a" id="fa{i}" role="region" aria-labelledby="fq{i}"><div><p>{a}</p></div></div>
       </div>
       """

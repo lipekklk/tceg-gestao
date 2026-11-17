@@ -10,6 +10,8 @@
       q.addEventListener('click', function () {
         var open = q.getAttribute('aria-expanded') === 'true';
         q.setAttribute('aria-expanded', String(!open));
+        var item = q.closest('.acc__item');
+        if (item) item.classList.toggle('is-open', !open);
         if (T.hasST) setTimeout(function () { window.ScrollTrigger.refresh(); }, 600);
       });
     });
