@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.tceg.com.br/sitemap.xml

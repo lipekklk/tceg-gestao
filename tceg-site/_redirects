@@ -1,0 +1,15 @@
+# URLs amigáveis (compatíveis com o site anterior). Netlify: status 200 = reescrita.
+/servicos  /servicos.html  200
+/cases  /cases.html  200
+/faq  /faq.html  200
+/diagnostico  /diagnostico.html  200
+/privacidade  /privacidade.html  200
+/obrigado  /obrigado.html  200
+/pgr  /pgr.html  200
+/pcmso  /pcmso.html  200
+/ltcat  /ltcat.html  200
+/avaliacoes-ocupacionais  /avaliacoes-ocupacionais.html  200
+/ergonomia  /ergonomia.html  200
+/esocial-sst  /esocial-sst.html  200
+/treinamentos  /treinamentos.html  200
+/pca-ppr  /pca-ppr.html  200

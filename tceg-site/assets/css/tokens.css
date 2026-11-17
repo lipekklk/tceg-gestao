@@ -1,0 +1,50 @@
+/* ==========================================================================
+   TCEG — Design tokens
+   Paleta derivada do logotipo (grafite + laranja-sinal). Tipografia:
+   Bricolage Grotesque (títulos) + Instrument Sans (texto e interface).
+   ========================================================================== */
+:root {
+  /* Cores — base */
+  --graphite: #1e252d;
+  --graphite-2: #252e37;
+  --graphite-3: #2f3a45;
+  --graphite-deep: #161b21;
+  --ink: #222930;
+  --steel: #52616c;
+  --steel-light: #9fb0ba;
+  --mist: #eef1f2;
+  --paper: #f7f8f9;
+  --line: #dde3e4;
+  --white: #ffffff;
+
+  /* Cores — sinal (acento da marca) */
+  --signal: #ec741f;
+  --signal-light: #ff994a;
+  --signal-deep: #a84208; /* texto laranja sobre fundo claro (contraste AA) */
+
+  /* Tipografia */
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-text: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+
+  --fs-hero: clamp(2.7rem, 8vw, 7.4rem);
+  --fs-h1: clamp(2.4rem, 6vw, 5.2rem);
+  --fs-h2: clamp(1.95rem, 4.4vw, 3.8rem);
+  --fs-h3: clamp(1.25rem, 1.9vw, 1.65rem);
+  --fs-lead: clamp(1.08rem, 1.45vw, 1.28rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9rem;
+
+  /* Layout */
+  --header-h: 76px;
+  --gutter: clamp(1.25rem, 4.2vw, 3.5rem);
+  --max: 1320px;
+  --section-y: clamp(5rem, 11vw, 9.5rem);
+
+  /* Raios e cortes: cantos retos por padrão, corte diagonal em peças-chave */
+  --r-s: 3px;
+  --cut: 28px;
+
+  /* Movimento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
